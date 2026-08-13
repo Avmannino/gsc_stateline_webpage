@@ -25,6 +25,9 @@
 
 .stateline-page {
   width: 100%;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
   margin: 0;
   padding: 0;
   overflow: hidden;

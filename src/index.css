@@ -4,27 +4,34 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body,
+#root {
   width: 100%;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
   margin: 0;
   padding: 0;
+}
 
+html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   background: transparent;
 }
 
 body {
-  width: 100%;
-
-  margin: 0;
-  padding: 0;
-
+  min-width: 320px;
   overflow-x: hidden;
-
   background: transparent;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: block;
+  overflow-x: hidden;
 }
 
 button,
@@ -37,11 +44,6 @@ select {
 img,
 svg,
 video {
+  display: block;
   max-width: 100%;
-}
-
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
