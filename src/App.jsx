@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Footer from "./Footer.jsx";
 
 /*
 =========================================================
@@ -76,6 +77,7 @@ function ImageSlot({
 
 function App() {
   return (
+    <>
     <main className="stateline-page">
 
       {/* =====================================================
@@ -237,6 +239,9 @@ function App() {
       </section>
 
     </main>
+
+    <Footer />
+    </>
   );
 }
 
