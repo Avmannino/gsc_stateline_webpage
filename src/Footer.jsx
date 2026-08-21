@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./Footer.css";
 
 /*
@@ -212,17 +212,16 @@ function ExploreMenu() {
   const [panelHeights, setPanelHeights] = useState({});
   const panelRefs = useRef(new Map());
 
-  useEffect(() => {
-    const heights = {};
-
-    panelRefs.current.forEach((node, title) => {
-      heights[title] = node.scrollHeight;
-    });
-
-    setPanelHeights(heights);
-  }, []);
-
   const toggleGroup = (title) => {
+    const node = panelRefs.current.get(title);
+
+    if (node) {
+      setPanelHeights((current) => ({
+        ...current,
+        [title]: node.scrollHeight,
+      }));
+    }
+
     setOpenGroups((current) => {
       const next = new Set(current);
 
