@@ -283,43 +283,6 @@
 
 
 /* =========================================================
-   MISSION IMAGE
-========================================================= */
-
-.mission-image-wrap {
-  position: relative;
-
-  width: min(1100px, calc(100% - 80px));
-
-  margin:
-    clamp(60px, 7vw, 100px)
-    auto
-    0;
-}
-
-.mission-image {
-  aspect-ratio: 16 / 9;
-  height: auto;
-}
-
-.mission-image-accent {
-  position: absolute;
-  right: -18px;
-  bottom: -18px;
-
-  z-index: 0;
-
-  width: 38%;
-  height: 38%;
-
-  border-right: 7px solid var(--accent);
-  border-bottom: 7px solid var(--accent);
-
-  pointer-events: none;
-}
-
-
-/* =========================================================
    STORY
 ========================================================= */
 
@@ -463,10 +426,6 @@
     gap: 55px;
   }
 
-  .mission-image-wrap {
-    width: calc(100% - 56px);
-  }
-
 }
 
 
@@ -529,17 +488,6 @@
 
   .mission-content {
     max-width: 100%;
-  }
-
-  .mission-image-wrap {
-    width: calc(100% - 48px);
-
-    margin-top: 60px;
-  }
-
-  .mission-image {
-    aspect-ratio: 16 / 9;
-    height: auto;
   }
 
 
@@ -660,26 +608,6 @@
     line-height: 1.7;
   }
 
-  .mission-image-wrap {
-    width: calc(100% - 36px);
-
-    margin-top: 48px;
-  }
-
-  .mission-image {
-    aspect-ratio: 16 / 9;
-    height: auto;
-  }
-
-  .mission-image-accent {
-    right: -8px;
-    bottom: -8px;
-
-    border-right-width: 4px;
-    border-bottom-width: 4px;
-  }
-
-
   .story-image {
     height: 390px;
   }
@@ -734,8 +662,7 @@
       29px;
   }
 
-  .mission-layout,
-  .mission-image-wrap {
+  .mission-layout {
     width: calc(100% - 28px);
   }
 

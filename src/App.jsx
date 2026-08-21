@@ -221,21 +221,6 @@ function App() {
           </div>
 
         </div>
-
-        <div className="mission-image-wrap">
-          <div className="image-slot mission-image">
-            <iframe
-              title="vimeo-player"
-              src="https://player.vimeo.com/video/917184799?h=0ebb576810"
-              frameBorder="0"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              allowFullScreen
-            />
-          </div>
-
-          <div className="mission-image-accent" />
-        </div>
       </section>
 
     </main>
