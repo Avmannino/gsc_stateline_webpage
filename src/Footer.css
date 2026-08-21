@@ -814,30 +814,9 @@
   }
 
   .footer-menu__group-title {
-    position: relative;
-
     justify-content: center;
 
     text-align: center;
-
-    border-bottom: none;
-  }
-
-  .footer-menu__group-title::after {
-    content: "";
-
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-
-    width: 44px;
-    height: 1px;
-
-    transform:
-      translateX(-50%);
-
-    background:
-      var(--footer-line);
   }
 
   .footer-menu__group li a {
