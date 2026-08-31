@@ -183,9 +183,9 @@
 
   width:
     clamp(
-      132px,
-      10vw,
-      172px
+      112px,
+      8.5vw,
+      148px
     );
 
   margin-left: 20px;
@@ -721,7 +721,7 @@
   }
 
   .footer-logo {
-    width: 138px;
+    width: 118px;
   }
 
   .footer-menu__groups {
@@ -788,7 +788,7 @@
     position: relative;
     left: -8px;
 
-    width: 110px;
+    width: 94px;
 
     margin: 0 auto;
   }
