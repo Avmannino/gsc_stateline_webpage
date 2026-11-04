@@ -266,6 +266,16 @@
   max-width: 780px;
 }
 
+.mission-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 clamp(28px, 3vw, 40px);
+
+  background: #000;
+  object-fit: cover;
+}
+
 .mission-content p {
   margin: 0 0 24px;
 

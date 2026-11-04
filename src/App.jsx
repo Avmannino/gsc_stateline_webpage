@@ -195,6 +195,17 @@ function App() {
           </div>
 
           <div className="mission-content">
+            <video
+              className="mission-video"
+              src={`${import.meta.env.BASE_URL}videos/stateline-video.mp4`}
+              poster={`${import.meta.env.BASE_URL}videos/stateline-video-poster.jpg`}
+              controls
+              playsInline
+              preload="metadata"
+            >
+              Your browser does not support the video tag.
+            </video>
+
             <p>
               Stateline Hawks is a non-profit girls’ hockey
               program dedicated to providing an exceptional
