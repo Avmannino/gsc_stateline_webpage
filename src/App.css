@@ -233,13 +233,60 @@
 .mission-layout {
   display: grid;
   grid-template-columns:
-    minmax(240px, 0.7fr)
-    minmax(0, 1.4fr);
+    minmax(0, 1fr)
+    minmax(0, 1.25fr);
+  align-items: center;
 
-  gap: clamp(50px, 8vw, 135px);
+  gap: clamp(40px, 4.5vw, 72px);
 
-  width: min(1260px, calc(100% - 80px));
+  width: min(1340px, calc(100% - 80px));
   margin: 0 auto;
+}
+
+/* Video with offset corner brackets: blue top-left, red bottom-right */
+.mission-media {
+  position: relative;
+  padding: clamp(14px, 1.8vw, 24px);
+}
+
+.mission-media::before,
+.mission-media::after {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 55%;
+  pointer-events: none;
+}
+
+.mission-media::before {
+  top: 0;
+  left: 0;
+
+  border-top: 3px solid var(--blue);
+  border-left: 3px solid var(--blue);
+  border-top-left-radius: 4px;
+}
+
+.mission-media::after {
+  right: 0;
+  bottom: 0;
+
+  border-right: 3px solid var(--red);
+  border-bottom: 3px solid var(--red);
+  border-bottom-right-radius: 4px;
+}
+
+.mission-heading {
+  width: fit-content;
+  margin-bottom: clamp(28px, 3vw, 40px);
+}
+
+.mission-heading .section-line {
+  width: 45%;
+  height: 3px;
+  margin-bottom: clamp(18px, 2vw, 26px);
+
+  background: var(--red);
 }
 
 .mission-heading h2 {
@@ -270,7 +317,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  margin: 0 0 clamp(28px, 3vw, 40px);
+  margin: 0;
 
   background: #000;
   object-fit: cover;
@@ -488,16 +535,13 @@
     width: calc(100% - 48px);
   }
 
-  .mission-heading h2 {
-    display: block;
-  }
-
-  .mission-heading h2 span {
-    margin-left: 12px;
-  }
-
   .mission-content {
+    order: 1;
     max-width: 100%;
+  }
+
+  .mission-media {
+    order: 2;
   }
 
 

@@ -185,26 +185,15 @@ function App() {
       <section className="mission-section">
         <div className="mission-layout">
 
-          <div className="mission-heading">
-            <div className="section-line" />
-
-            <h2>
-              Our
-              <span>Mission</span>
-            </h2>
-          </div>
-
           <div className="mission-content">
-            <video
-              className="mission-video"
-              src={`${import.meta.env.BASE_URL}videos/stateline-video.mp4`}
-              poster={`${import.meta.env.BASE_URL}videos/stateline-video-poster.jpg`}
-              controls
-              playsInline
-              preload="metadata"
-            >
-              Your browser does not support the video tag.
-            </video>
+            <div className="mission-heading">
+              <div className="section-line" />
+
+              <h2>
+                Our
+                <span>Mission</span>
+              </h2>
+            </div>
 
             <p>
               Stateline Hawks is a non-profit girls’ hockey
@@ -229,6 +218,19 @@ function App() {
               and having our teams be tournament-bound members
               of highly competitive leagues.
             </p>
+          </div>
+
+          <div className="mission-media">
+            <video
+              className="mission-video"
+              src={`${import.meta.env.BASE_URL}videos/stateline-video.mp4`}
+              poster={`${import.meta.env.BASE_URL}videos/stateline-video-poster.jpg`}
+              controls
+              playsInline
+              preload="metadata"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
 
         </div>
